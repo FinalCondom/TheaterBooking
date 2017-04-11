@@ -1,3 +1,13 @@
 <resources>
     <string name="app_name">TheaterBooking</string>
+    <string name="Movie">Movie</string>
+    <string name="Theater">Theater</string>
+    <string name="TheaterName">CinéSion</string>
+    <string name="Room">Room</string>
+    <string name="Address">Address</string>
+    <string name="Date">Date</string>
+    <string name="Occupation">Occupation</string>
+    <string name="AddressName">Rue des Cèdres 10, 1950 Sion</string>
+    <string name="Book">Book Ticket</string>
+    <string name="Lorem">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus vel pharetra augue, eu fringilla orci.</string>
 </resources>

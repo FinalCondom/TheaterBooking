@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/Movie"
+        android:layout_width="125dp"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/MovieName"
+        android:layout_alignBottom="@+id/MovieName"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:ems="10"
+        android:text="@string/Movie" />
+
+    <TextView
+        android:id="@+id/MovieName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:ems="10"
+        android:text="@string/Lorem"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:layout_toRightOf="@+id/Movie"
+        android:layout_toEndOf="@+id/Movie" />
+
+    <TextView
+        android:id="@+id/Theater"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/Theater"
+        android:layout_alignBaseline="@+id/TheaterName"
+        android:layout_alignBottom="@+id/TheaterName"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_toLeftOf="@+id/MovieName"
+        android:layout_toStartOf="@+id/MovieName" />
+
+    <TextView
+        android:id="@+id/TheaterName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/MovieName"
+        android:text="@string/Lorem"
+        android:layout_toRightOf="@+id/Movie"
+        android:layout_toEndOf="@+id/Movie" />
+
+    <TextView
+        android:id="@+id/Room"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/TheaterName"
+        android:text="@string/Room"
+        android:layout_toLeftOf="@+id/TheaterName"
+        android:layout_toStartOf="@+id/TheaterName" />
+
+    <TextView
+        android:id="@+id/RoomName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/Lorem"
+        android:layout_alignBaseline="@+id/Room"
+        android:layout_alignBottom="@+id/Room"
+        android:layout_alignLeft="@+id/TheaterName"
+        android:layout_alignStart="@+id/TheaterName" />
+
+    <TextView
+        android:id="@+id/Address"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/RoomName"
+        android:text="@string/Address"
+        android:layout_toLeftOf="@+id/RoomName"
+        android:layout_toStartOf="@+id/RoomName" />
+
+    <TextView
+        android:id="@+id/AddressName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/RoomName"
+        android:layout_alignStart="@+id/RoomName"
+        android:layout_below="@+id/RoomName"
+        android:text="@string/Lorem" />
+
+    <TextView
+        android:id="@+id/Date"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/AddressName"
+        android:text="@string/Date"
+        android:layout_toStartOf="@+id/AddressName" />
+
+    <TextView
+        android:id="@+id/textView10"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/AddressName"
+        android:layout_alignStart="@+id/AddressName"
+        android:layout_below="@+id/AddressName"
+        android:text="@string/Lorem" />
+
+    <TextView
+        android:id="@+id/Occupation"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/textView10"
+        android:text="@string/Occupation"
+        android:layout_toLeftOf="@+id/textView10"
+        android:layout_toStartOf="@+id/textView10" />
+
+    <TextView
+        android:id="@+id/OccupationName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/textView10"
+        android:layout_alignStart="@+id/textView10"
+        android:layout_below="@+id/textView10"
+        android:text="@string/Lorem" />
+
+    <Button
+        android:id="@+id/Book"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/OccupationName"
+        android:layout_centerHorizontal="true"
+        android:onClick="startBooking"
+        android:text="@string/Book" />
+
+</RelativeLayout>
