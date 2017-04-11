@@ -28,7 +28,7 @@ public class DisplayTheaterActivity extends AppCompatActivity {
 
 
 
-        //  setFirstData(db);
+        //setFirstData(db);
 
 
 
