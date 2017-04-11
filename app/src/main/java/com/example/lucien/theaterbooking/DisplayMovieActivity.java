@@ -1,5 +1,8 @@
 package com.example.lucien.theaterbooking;
 
+import android.os.Bundle;
+import android.os.PersistableBundle;
+
 import android.support.v7.app.AppCompatActivity;
 
 /**
@@ -7,4 +10,9 @@ import android.support.v7.app.AppCompatActivity;
  */
 
 public class DisplayMovieActivity extends AppCompatActivity {
+
+    @Override
+    public void onCreate( Bundle savedInstanceState, PersistableBundle persistentState) {
+        super.onCreate(savedInstanceState, persistentState);
+    }
 }
