@@ -7,19 +7,27 @@ package com.example.lucien.theaterbooking.DatabaseObject;
 public class Movie {
 
     private int idMovie;
+    private String title;
     private String description;
     private String duration;
 
     public Movie() {
     }
 
-    public Movie(String description, String duration) {
+    public Movie(String title, String duration) {
+        this.title = title;
+        this.duration = duration;
+    }
+
+    public Movie(String title, String description, String duration) {
+        this.title = title;
         this.description = description;
         this.duration = duration;
     }
 
-    public Movie(int idMovie, String description, String duration) {
+    public Movie(int idMovie, String title, String description, String duration) {
         this.idMovie = idMovie;
+        this.title = title;
         this.description = description;
         this.duration = duration;
     }
@@ -30,6 +38,14 @@ public class Movie {
 
     public void setIdMovie(int idMovie) {
         this.idMovie = idMovie;
+    }
+
+    public String getTitle() {
+        return title;
+    }
+
+    public void setTitle(String title) {
+        this.title = title;
     }
 
     public String getDescription() {
