@@ -10,4 +10,17 @@
     <string name="AddressName">Rue des Cèdres 10, 1950 Sion</string>
     <string name="Book">Book Ticket</string>
     <string name="Lorem">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus vel pharetra augue, eu fringilla orci.</string>
+    <string name="Screening">Screening</string>
+   <string name="seatsLeft">Seats left</string>
+    <string name="price">Price</string>
+
+    <!-- Movie Description -->
+    <string name="johnWick_desc">John Wick est forcé de sortir de sa retraite volontaire par un de
+        ses ex-associés qui cherche à prendre le contrôle d\’une mystérieuse confrérie de tueurs internationaux. Parce qu\’il est lié à cet homme par un serment, John se rend à Rome,
+                où il va devoir affronter certains des tueurs les plus dangereux du monde. </string>
+    <string name="guardiansOfGal2_desc">Les Gardiens de la galaxie 2 poursuit les aventures de l\'éq
+        uipe alors qu\'elle traverse les confins du cosmos. Les gardiens doivent combattre pour rester unis alors qu\'ils découvrent les mystères de la filiation de Peter Quill</string>
+    <string name="fast8_desc">Maintenant que Dom et Letty sont en lune de miel, que Brian et Mia se sont rangés et que le reste de l\’équipe a été disculpé, la bande de globetrotteurs retrouve
+        un semblant de vie normale. Mais quand une mystérieuse femme entraîne Dom dans le monde de la criminalité, ce dernier ne pourra éviter de trahir ses proches qui vont faire face à des épreuves qu\’ils n’avaient jamais rencontrées jusqu\’alors.</string>
+
 </resources>

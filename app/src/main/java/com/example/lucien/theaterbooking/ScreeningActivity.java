@@ -11,8 +11,12 @@ import android.support.v7.app.AppCompatActivity;
 import android.util.Log;
 import android.view.View;
 import android.widget.ListAdapter;
+import android.widget.TextView;
 
 import com.example.lucien.theaterbooking.DatabaseObject.Booking;
+import com.example.lucien.theaterbooking.DatabaseObject.Room;
+import com.example.lucien.theaterbooking.DatabaseObject.Show;
+import com.example.lucien.theaterbooking.DatabaseTable.DatabaseHandler;
 
 import java.util.ArrayList;
 
@@ -24,10 +28,32 @@ public class ScreeningActivity extends AppCompatActivity {
     @Override
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-
         setContentView(R.layout.activity_screening);
+
+        DatabaseHandler db=new DatabaseHandler(this);
+        String title=getIntent().getStringExtra("movie");
+        int id=getIntent().getIntExtra("showId",0);
+        Show show=db.getShow(id);
+        Room room=db.getRoom(show.getIdRoom());
+
+        TextView movie=(TextView)findViewById(R.id.MovieName);
+        TextView theater=(TextView)findViewById(R.id.TheaterName);
+        TextView roomDesc=(TextView)findViewById(R.id.RoomDescName);
+        TextView adress=(TextView)findViewById(R.id.AddressName);
+        TextView date=(TextView)findViewById(R.id.DateName);
+        TextView occupation=(TextView)findViewById(R.id.OccupationName);
+
+
+
+        movie.setText(title);
+        theater.setText(room.getName());
+        roomDesc.setText(room.getDescription());
+        adress.setText(getString(R.string.AddressName));
+        date.setText(show.getDate());
+        occupation.setText(String.valueOf(show.getRemainingSeat()));
+
     }
-    
+
 
     public void startBooking(View v){
         CharSequence[] array = {"1", "2", "3", "4", "5"};

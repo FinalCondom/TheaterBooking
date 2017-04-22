@@ -61,7 +61,7 @@ public class MovieAdapter extends BaseAdapter {
         return convertView;
     }
 
-    static class ViewHolder {
+static class ViewHolder {
         TextView titleView;
         TextView descView;
         TextView durationView;

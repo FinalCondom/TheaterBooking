@@ -49,7 +49,7 @@
         android:layout_toEndOf="@+id/Movie" />
 
     <TextView
-        android:id="@+id/Room"
+        android:id="@+id/RoomDesc"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_alignParentLeft="true"
@@ -60,12 +60,12 @@
         android:layout_toStartOf="@+id/TheaterName" />
 
     <TextView
-        android:id="@+id/RoomName"
+        android:id="@+id/RoomDescName"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="@string/Lorem"
-        android:layout_alignBaseline="@+id/Room"
-        android:layout_alignBottom="@+id/Room"
+        android:layout_alignBaseline="@+id/RoomDesc"
+        android:layout_alignBottom="@+id/RoomDesc"
         android:layout_alignLeft="@+id/TheaterName"
         android:layout_alignStart="@+id/TheaterName" />
 
@@ -75,18 +75,18 @@
         android:layout_height="wrap_content"
         android:layout_alignParentLeft="true"
         android:layout_alignParentStart="true"
-        android:layout_below="@+id/RoomName"
+        android:layout_below="@+id/RoomDescName"
         android:text="@string/Address"
-        android:layout_toLeftOf="@+id/RoomName"
-        android:layout_toStartOf="@+id/RoomName" />
+        android:layout_toLeftOf="@+id/RoomDescName"
+        android:layout_toStartOf="@+id/RoomDescName" />
 
     <TextView
         android:id="@+id/AddressName"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_alignLeft="@+id/RoomName"
-        android:layout_alignStart="@+id/RoomName"
-        android:layout_below="@+id/RoomName"
+        android:layout_alignLeft="@+id/RoomDescName"
+        android:layout_alignStart="@+id/RoomDescName"
+        android:layout_below="@+id/RoomDescName"
         android:text="@string/Lorem" />
 
     <TextView
@@ -97,10 +97,11 @@
         android:layout_alignParentStart="true"
         android:layout_below="@+id/AddressName"
         android:text="@string/Date"
+        android:layout_toLeftOf="@id/AddressName"
         android:layout_toStartOf="@+id/AddressName" />
 
     <TextView
-        android:id="@+id/textView10"
+        android:id="@+id/DateName"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_alignLeft="@+id/AddressName"
@@ -114,18 +115,18 @@
         android:layout_height="wrap_content"
         android:layout_alignParentLeft="true"
         android:layout_alignParentStart="true"
-        android:layout_below="@+id/textView10"
+        android:layout_below="@+id/DateName"
         android:text="@string/Occupation"
-        android:layout_toLeftOf="@+id/textView10"
-        android:layout_toStartOf="@+id/textView10" />
+        android:layout_toLeftOf="@+id/DateName"
+        android:layout_toStartOf="@+id/DateName" />
 
     <TextView
         android:id="@+id/OccupationName"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_alignLeft="@+id/textView10"
-        android:layout_alignStart="@+id/textView10"
-        android:layout_below="@+id/textView10"
+        android:layout_alignLeft="@+id/DateName"
+        android:layout_alignStart="@+id/DateName"
+        android:layout_below="@+id/DateName"
         android:text="@string/Lorem" />
 
     <Button

@@ -339,6 +339,35 @@ public class DatabaseHandler extends SQLiteOpenHelper {
         return show;
     }
 
+    public List<Show> getShowsByMovie(int id) {
+        List<Show> showList = new ArrayList<Show>();
+        // Select All Query
+        String selectQuery = "SELECT  * FROM " + TheaterContracts.Shows.TABLE_SHOW +" WHERE "+
+                TheaterContracts.Shows.SHOW_MOVIE+" = "+id;
+
+        SQLiteDatabase db = this.getWritableDatabase();
+        Cursor cursor = db.rawQuery(selectQuery, null);
+
+
+        if (cursor.moveToFirst()) {
+            do {
+                Show show= new Show();
+                show.setIdShow(Integer.parseInt(cursor.getString(0)));
+                show.setIdRoom(Integer.parseInt(cursor.getString(1)));
+                show.setIdMovie(Integer.parseInt(cursor.getString(2)));
+                show.setPrice(Integer.parseInt(cursor.getString(3)));
+                show.setRemainingSeat(Integer.parseInt(cursor.getString(4)));
+                show.setDate(cursor.getString(5));
+                // Adding contact to list
+                showList.add(show);
+            } while (cursor.moveToNext());
+        }
+
+        // return movie list
+        return showList;
+
+    }
+
     //Methods for Booking
     public void AddBooking(Booking booking) {
 
